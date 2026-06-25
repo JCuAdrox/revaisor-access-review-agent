@@ -45,58 +45,6 @@ def role_tool(user_id: str) -> dict:
     """
     raise NotImplementedError
 
-
-def get_user(name: str) -> dict | None:
-    """
-    Return a user node from the KG by name.
-
-    Args:
-        name: The user's display name, e.g. "Priya".
-
-    Returns:
-        The user dict from KG["users"], or None if not found.
-
-    TODO: query KG["users"] with a case-insensitive match.
-    """
-    raise NotImplementedError
-
-
-# ---------------------------------------------------------------------------
-# Role type tools
-# ---------------------------------------------------------------------------
-
-def get_role_type(name: str) -> dict | None:
-    """
-    Return a role type node from the KG by name.
-
-    Args:
-        name: The role type name, e.g. "GBR" or "ZGBR".
-
-    Returns:
-        The role type dict from KG["role_types"], or None if not found.
-
-    TODO: query KG["role_types"] with a case-insensitive match.
-    """
-    raise NotImplementedError
-
-
-def get_contrast(role_type: str) -> dict | None:
-    """
-    Return the contrastive role type for a given role type.
-    e.g. get_contrast("GBR") returns the ZGBR node, and vice versa.
-
-    Args:
-        role_type: The role type name, e.g. "GBR".
-
-    Returns:
-        The contrasting role type dict, or None if not found.
-
-    TODO: use the "differs_from" field (or edges) in KG["role_types"]
-          to find and return the opposing role type node.
-    """
-    raise NotImplementedError
-
-
 # ---------------------------------------------------------------------------
 # Document tool
 # ---------------------------------------------------------------------------
