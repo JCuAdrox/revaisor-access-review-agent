@@ -6,7 +6,6 @@ Welcome to the RevAIsor technical test. Your task is to build a tool-augmented A
 
 ```bash
 pip install -r requirements.txt
-export OPENAI_API_KEY="sk-..."   # or GOOGLE_API_KEY for Gemini
 ```
 
 ## Run
@@ -25,7 +24,7 @@ python agent.py "Order a pizza for the office"
 | `knowledge_graph.py` | Complete the KG data |
 | `tools.py` | Implement all 5 query functions |
 | `agent.py` | Define tools, build the agent loop |
-| `evaluator.py` | Bonus — implement the LLM judge |
+| `evaluator.py` | Bonus — implement the judge |
 
 ## Submission
 

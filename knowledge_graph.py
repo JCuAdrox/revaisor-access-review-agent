@@ -1,5 +1,5 @@
 """
-knowledge_graph.py — Single source of truth for the RevAIsor Access Review Agent.
+knowledge_graph.py 
 
 Your task: fill in the KG with the data your tools will query.
 
@@ -9,7 +9,6 @@ The KG must encode:
   3. Users           : who owns which roles, and their review history
 
 Your tools.py will import KG and query it directly.
-Your agent.py must never import or read KG — it only calls tools.
 
 You are free to restructure KG as long as your tools can query it correctly.
 """
@@ -33,11 +32,10 @@ KG: dict = {
             ),
             "differs_from": "ZGBR",
         },
-        # TODO: add ZGBR
     },
 
     # ── Policy Documents ──────────────────────────────────────────────────
-    # TODO: add more documents to cover ZGBR and the GBR vs ZGBR comparison.
+    # TODO: add more documents.
     # Each document must have a source_id — the agent must cite it in responses.
     "documents": [
         {

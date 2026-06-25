@@ -1,5 +1,5 @@
 """
-agent.py — RevAIsor Access Review Agent
+agent.py
 
 Run from the command line:
     python agent.py "What role does Priya own?"

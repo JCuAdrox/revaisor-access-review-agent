@@ -1,5 +1,5 @@
 """
-tools.py — Tools for the RevAIsor Access Review Agent.
+tools.py
 
 Each function is a tool the agent can call. They all query the Knowledge Graph
 defined in knowledge_graph.py — there is no other data source.
@@ -7,8 +7,7 @@ defined in knowledge_graph.py — there is no other data source.
 Your tasks:
   1. Fill in the KG data in knowledge_graph.py
   2. Implement each function below so it queries KG correctly
-  3. DO NOT modify the function signatures — the agent relies on them
-
+  
 Citation rule: every tool that returns data must make it easy for the agent
 to cite its source. role_tool cites "Role-DB", document_tool cites the
 source_id field in each document fragment.
