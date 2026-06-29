@@ -28,15 +28,11 @@ import os
 import openai
 from google import genai
 
-# ---------------------------------------------------------------------------
 # TODO 1: LLM setup
-# ---------------------------------------------------------------------------
 # Initialize your client here, same as in agent.py.
 
-# ---------------------------------------------------------------------------
-# TODO 2: Implement the evaluator
-# ---------------------------------------------------------------------------
 
+# TODO 2: Implement the evaluator
 def evaluate(
     query:        str,
     tool_outputs: dict,
@@ -65,10 +61,7 @@ def evaluate(
     raise NotImplementedError
 
 
-# ---------------------------------------------------------------------------
 # TODO 3: Run the agent and evaluate its output
-# ---------------------------------------------------------------------------
-
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print('Usage: python evaluator.py "<query>"')
@@ -80,8 +73,5 @@ if __name__ == "__main__":
     #   1. Import and run the agent to get the answer and capture tool outputs
     #   2. Call evaluate() with the results
     #   3. Print the verdict
-    #
-    # Hint: you can wrap the functions in agent.TOOLS to intercept
-    #       and record what each tool returned during the agent run.
-
+    
     print("Evaluator not yet implemented.")
