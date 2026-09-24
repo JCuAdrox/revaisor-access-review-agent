@@ -37,7 +37,6 @@ logging.getLogger("google_genai.models").setLevel(logging.ERROR)
 
 # TODO 1: LLM setup
 client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
-MODEL_NAME = "gemini-2.5-flash"  
 
 MODEL_FALLBACKS = [
     "gemini-3.5-flash-lite",
